@@ -8,7 +8,7 @@ module PandaDoc
       respond(ApiClient.request(:post, "/documents/folders", **data))
     end
 
-    def find(uuid, **data)
+    def list(**data)
       respond(ApiClient.request(:get, "/documents/folders", **data))
     end
 
