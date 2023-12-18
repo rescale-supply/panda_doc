@@ -8,10 +8,6 @@ module PandaDoc
       respond(ApiClient.request(:post, "/documents/folders", **data))
     end
 
-    def list(**data)
-      respond(ApiClient.request(:get, "/documents/folders", **data))
-    end
-
     def rename(data)
       respond(ApiClient.request(:put, "/documents/folders/#{uuid}", **data))
     end
