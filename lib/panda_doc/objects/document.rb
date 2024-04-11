@@ -13,6 +13,7 @@ module PandaDoc
       attribute? :expiration_date, Types::Params::DateTime.optional
       attribute :version, Types::String.optional
 
+      attribute? :content_placeholders, Types::Array.of(Types::Hash)
       attribute? :tokens, Types::Array.of(Objects::Token)
       attribute? :fields, Types::Array.of(Objects::Field)
 
