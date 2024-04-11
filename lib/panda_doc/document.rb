@@ -6,7 +6,6 @@ module PandaDoc
 
     def create(data)
       respond(ApiClient.request(:post, "/documents", **data))
-      puts data.to_yaml
     end
 
     def send(uuid, **data)
