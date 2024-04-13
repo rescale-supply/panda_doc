@@ -8,6 +8,10 @@ module PandaDoc
       respond(ApiClient.request(:post, "/documents", **data))
     end
 
+    def add_file(uuid, **data)
+      respond(ApiClient.request(:post, "/documents/#{uuid}/sections/uploads", **data))
+    end
+
     def send(uuid, **data)
       respond(ApiClient.request(:post, "/documents/#{uuid}/send", **data))
     end
