@@ -44,10 +44,6 @@ module PandaDoc
     end
 
     def post(path, data = {})
-      puts "----------"
-      puts "NEW POST REQUEST"
-      puts "path: #{path}"
-      puts "data: #{data}"
       connection.post(normalized_path(path), **data)
     end
 
