@@ -11,6 +11,11 @@ module PandaDoc
     attr_reader :response
 
     def initialize(response)
+      puts "------------"
+      puts "ERROR"
+      puts "------------"
+      puts response.body
+
       @response = response
       @error = Objects::Error.new(response.body)
     end
