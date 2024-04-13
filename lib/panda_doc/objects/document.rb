@@ -3,7 +3,7 @@
 module PandaDoc
   module Objects
     class Document < Base
-      attribute :id, Types::String
+      attribute? :id, Types::String
       attribute? :uuid, Types::String
       attribute :status, Types::Custom::DocumentStatus
       attribute :name, Types::String
