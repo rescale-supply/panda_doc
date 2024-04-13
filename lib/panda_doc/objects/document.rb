@@ -11,7 +11,7 @@ module PandaDoc
       attribute :date_created, Types::Params::DateTime
       attribute :date_modified, Types::Params::DateTime
       attribute? :expiration_date, Types::Params::DateTime.optional
-      attribute :version, Types::String.optional
+      attribute? :version, Types::String.optional
 
       attribute? :content_placeholders, Types::Array.of(Types::Hash)
       attribute? :tokens, Types::Array.of(Objects::Token)
